@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1100px;
+    margin: auto; 
+}
+.main_container{
+    width: 1200px;
+    margin: auto; 
+    margin-bottom: 50px;
+}
+.row{
+    display: flex;  
+}
+
+img{
+    max-width: 100%;
+}
+.col-3{
+    max-width: 33.33%;
+    flex: 1 0 33.33%;
+    padding: 15px;
+}
+/* header css */
+
+header{
+border-bottom: 2px solid #3b506c1c;
+position: sticky;
+top: 0;
+background: white;
+
+}
+header .row{
+    align-items: center;
+}
+.logo{
+    flex-basis: 20%;
+    max-width: 20%;
+}
+.logo a{}
+
+.logo a img{
+
+}
+nav{
+    flex-basis: 80%;
+    max-width: 80%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+nav ul li{}
+
+nav ul li a{
+   display: block; 
+   color: #3b506c;
+   text-transform: capitalize;
+   text-decoration: none;
+   padding: 20px 15px;
+   font-weight: 400;
+   font-size: 20px;
+   position: relative;
+   transition: all 0.3s ease;
+  
+}
+nav ul li a:hover{
+  color: #fff;
+}
+nav ul li a::after{
+  content: "";
+  width: 3px;
+  height: 25px;
+  background: #162c48;
+  display: block;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* header css */
+
+/* Banner css */
+.banner-section{
+  padding: 50px 0;
+}
+.banner-section .content{
+    text-align: center;
+}
+.banner-section .content h1{
+   font-size: 50px; 
+   color:#162c48 ;
+}
+.banner-section .content h1 span{
+    display: block;
+    color:#0c66FF ;
+}
+.banner-section .content img{
+    max-width: 500px;
+}
+.banner-section .content p{
+        color: #3b506c;  
+        max-width: 800px;
+        margin: 20px auto;
+        font-weight: 300;
+        font-size: 20px;
+}
+/* Banner css */
+
+/* Features css */
+.features-section{
+
+}
+.features-section .row{
+justify-content: center;
+}
+.features-content h2{
+      font-size: 45px;
+      color:#162c48 ;
+      line-height: 1;
+      font-weight: 800;
+}
+.features-content h2 span{
+    color: #ff4141;
+}
+.features-content p{
+    color: #3b506c;  
+    margin: 20px auto;
+    font-weight: 400;
+    font-size: 20px;
+}
+.text-right{
+  text-align: right;
+}
+
+/* Blog css */
+
+.post{
+padding:35px;
+box-shadow: 0 0 10px 0px  #dee6f1
+
+}
+.post:hover{
+    background: white;
+    transform: translateY(-5px);
+    transition: 1s;
+
+}
+.illustration-5{
+background: #fde2fd;
+}
+.illustration-6{
+    background: #EBF9F4;
+}
+.illustration-7{
+    background: #eef5b991;
+}
+.post h3{
+    font-size:25px;
+    color:#162c48 ;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.post{
+  padding: 60px 30px;
+}
+.post img{
+    max-height: 150px;
+    display: block;
+    margin:50px auto;
+    margin-bottom: 25px;
+    }
+.post p{
+    color: #3b506c;  
+    font-weight: 400;
+    margin: 5px auto;
+    line-height: 1.5;
+}
+/* Footer css */
+footer{
+    background-color: #0c66FF;
+    text-align: center;
+    padding: 30px 0;
+    }
+footer p{
+   color: #ffffffc7; 
+}
+footer p strong{
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  
+ /** social**/
+ .social{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50);
+  left: 10px;
+ }
+ .social li{
+  flex: 1 0 auto;
+ }
+ .social li a{
+  background: #162c48;
+  color: #fff;
+  margin-bottom: 6px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px #655c5c8c;
+  border: 1px solid #162c48;
+  transition: all 0.3s ease;
+ }
+ .social li a:hover{
+  background: transparent;
+  color: #162c48;
+}
+ 
+ /**
+ Resposive Xlg device
+ **/
+
+@media (max-width: 1200px) {
+  .container{
+    width: 900px;
+}
+.banner-section .content h1 {
+    font-size: 45px;
+    }
+    .banner-section .content p {
+    max-width: 700px;
+    font-size: 17px;
+}
+.banner-section .content img {
+    max-width: 400px;
+}
+.features-content h2 {
+    font-size: 35px;
+}
+.features-content p {
+    font-size: 16px;
+}
+.post h3 {
+    font-size: 20px;
+  }
+.post img {
+    max-height: 130px;
+  }
+  .main_container {
+    width: 950px;
+  }
+.post p {
+    line-height: 1.2;
+ }
+ .post {
+    padding: 35px 20px;
+}
+footer {
+    padding: 20px 0;
+}
+
+
+/**
+ Resposive lg device
+ **/
+
+}
+@media (max-width: 992px) {
+  .container{
+    width: 700px;
+}
+.features-content h2 {
+    font-size: 27px;
+}
+.features-content p {
+    font-size: 14px;
+}
+.post p {
+    line-height: 1.1;
+  }
+  .post img {
+    max-height: 105px;
+}
+.post h3 {
+    font-size: 17px;
+  }
+  .main_container {
+    width: 680px;
+}
+.social li a {
+    width: 35px;
+    height: 35px;
+  }
+  .post {
+    padding: 20px 10px;
+}
+}
+
+
+/**
+ Resposive md device
+ **/
+
+@media (max-width: 768px) {
+  .container{
+    width: 100%;
+    padding: 0 15px;
+
+}
+.main_container {
+    width: 675px;
+}
+}
+
+
+/**
+ Resposive sm device
+ **/
+
+@media (max-width: 576px) {
+
+.logo{
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+nav {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+nav ul {
+    
+    justify-content: center;
+}
+nav ul li a {
+    padding: 7px 10px;
+    font-size: 15px;
+}
+nav ul li a::after{
+  content: none;
+}
+nav ul li a:hover{
+  color: #0c66ff;
+}
+.banner-section .content h1 {
+    font-size: 30px;
+}
+.banner-section .content p {
+    max-width: 350px;
+    font-size: 14px;
+}
+.banner-section .content img {
+    max-width: 250px;
+}
+
+.features-content h2 {
+    font-size: 18px;
+}
+.features-content p {
+    font-size: 12px;
+}
+
+.main_container {
+    width: 490px;
+}
+
+.post {
+    padding: 3px 5px;
+}
+ .post img {
+    max-height: 60px;
+}
+.post p {
+    line-height: 1;
+}
+.social li a {
+    width: 25px;
+    height: 25px;
+}
+.col-3 {
+    max-width: 40%;
+    flex: 1 0 35%;
+    padding: 14px;
+}
+
+.post:hover {
+    
+    transform: none;
+}
+}
+
+
+
+
+
+/**
+/**  nav ul li a:hover {
+    transform: scale(1.1);
+    transition: all ease .4s;
+    color:#0c66FF ;
+}
+**/
